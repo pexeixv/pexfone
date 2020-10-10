@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     /* overflow: hidden; */
     /* outline: .5px solid red; */
 }
@@ -40,7 +41,11 @@ ul, li{
 
 /* HEADER */
 header{
-    height: 7vh;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    height: 10vh;
     background: white;
     display: flex;
     align-items: center;
@@ -51,7 +56,7 @@ header{
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 .logo h2{
     margin-left: 1rem;
@@ -183,6 +188,10 @@ header ul li:hover::after{
     align-items: center;
     justify-content: center;
 }
+.gridShow h2{
+    font-size: 5rem;
+    margin: 2rem auto 5rem;
+}
 .gridShow .gridCard{
     display: flex;
     align-items: center;
@@ -192,19 +201,18 @@ header ul li:hover::after{
 }
 .gridShow .gridCard .image{
     overflow: hidden;
-    background: url(http://dummyimage.com/700x500) no-repeat;
     background-position: center center;
 }
 #gridCard1 .image{
-    background: url(https://source.unsplash.com/ENEjCgjgb1c);
+    background: url(../img/grid/1.jpeg);
     background-size: 100%;
 }
 #gridCard2 .image{
-    background: url(https://source.unsplash.com/4Iyg6cNU7sI);
+    background: url(../img/grid/2.jpeg);
     background-size: 100%;
 }
 #gridCard3 .image{
-    background: url(https://source.unsplash.com/cZr2sgaxy3Q);
+    background: url(../img/grid/3.jpeg);
     background-size: 100%;
 }
 .gridCard .image, .gridCard .text{
@@ -231,5 +239,5 @@ header ul li:hover::after{
     margin-bottom: 2rem;
 }
 .gridShow .text h3, .text h5, .text p{
-    margin: 0 7rem;
+    margin: 0 6rem;
 }
