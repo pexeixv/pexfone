@@ -1,0 +1,44 @@
+header 
+	height: 7vh 
+	background: white 
+	display: flex 
+	align-items: center 
+	justify-content: space-between 
+	padding: 1.5rem 5rem
+	ul 
+		display: flex 
+		align-items: center 
+		font-size: 1.8rem 
+		li 
+			&:not(:last-child) 
+				margin-right: 2rem 
+			&:not(:last-child)::after 
+				height: 3px 
+				width: 0 
+				background-color: rgb(67, 155, 255) 
+				content: '' 
+				display: block 
+				margin: auto 
+				border-radius: 100vw 
+				transition: width 200ms ease-out 50ms 
+			&:hover 
+				&::after 
+					width: 4rem 
+					transition-delay: 300ms 
+    a 
+        text-transform: uppercase 
+        transition: color 200ms ease-in-out 
+        &:not(.btn):hover 
+            color: grey 
+	.btn 
+		padding: 0.5rem 1.5rem 
+.logo
+    height: 100% 
+    display: flex 
+    align-items: center 
+    justify-content: space-between 
+    img 
+        height: 100% 
+    h2 
+        margin-left: 1rem 
+        font-size: 3rem 
