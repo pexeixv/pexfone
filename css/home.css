@@ -59,6 +59,7 @@ header{
     text-transform: uppercase;
     display: flex;
     align-items: center;
+    font-weight: 900;
 }
 .logo h2 span{
     font-size: 130%;
@@ -96,6 +97,12 @@ header ul li:hover::after{
     transition-delay: 300ms;
 }
 
+@media screen and (max-width: 800px){
+    header{
+        flex-direction: column;
+        height: fit-content;
+    }
+}
 
 /* LANDING AREA */
 .landingArea{
@@ -160,4 +167,69 @@ header ul li:hover::after{
         width: 360px;
         background:rgb(199, 242, 255);
     }
+}
+
+
+
+
+/* GRID SHOW */
+
+.gridShow{
+    width: calc(100%-0);
+    height: fit-content;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.gridShow .gridCard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 400px;
+}
+.gridShow .gridCard .image{
+    overflow: hidden;
+    background: url(http://dummyimage.com/700x500) no-repeat;
+    background-position: center center;
+}
+#gridCard1 .image{
+    background: url(https://source.unsplash.com/ENEjCgjgb1c);
+    background-size: 100%;
+}
+#gridCard2 .image{
+    background: url(https://source.unsplash.com/4Iyg6cNU7sI);
+    background-size: 100%;
+}
+#gridCard3 .image{
+    background: url(https://source.unsplash.com/cZr2sgaxy3Q);
+    background-size: 100%;
+}
+.gridCard .image, .gridCard .text{
+    height: 100%;
+    width: 50%;
+}
+.gridShow .gridCard .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.gridShow .gridCard .text h3{
+    margin-top: 2rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.gridShow .gridCard .text h5{
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+.gridShow .gridCard .text p{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.gridShow .text h3, .text h5, .text p{
+    margin: 0 7rem;
 }
