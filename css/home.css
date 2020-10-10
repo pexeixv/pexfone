@@ -212,7 +212,7 @@ header ul li:hover::after{
     background-size: 100%;
 }
 #gridCard3 .image{
-    background: url(../img/grid/3.jpeg);
+    background: url(../img/grid/3.jpeg) no-repeat;
     background-size: 100%;
 }
 .gridCard .image, .gridCard .text{
