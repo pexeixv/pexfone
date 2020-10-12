@@ -79,7 +79,7 @@
     transition: all 500ms 100ms;
 }
 .productCard:hover img{
-    height: 130%;
+    height: 150%;
 }
 .productCard:hover .modelNo{
     left: 10%;
