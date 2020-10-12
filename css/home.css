@@ -1,114 +1,3 @@
-/* BASIC RESET */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* overflow: hidden; */
-    /* outline: .5px solid red; */
-}
-
-html{
-    font-size: 62.5%;
-    font-family: 'Poppins';
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-ul, li{
-    list-style: none;
-}
-*::selection{
-    background: black;
-    color: blue;
-}
-
-
-/* GLOBAL */
-.btn{
-    text-transform: uppercase;
-    border-radius: 2rem;
-    background-color: rgb(94, 169, 255);
-    color: white;
-    font-weight: bold;
-    transition: background-color 200ms ease-in-out;
-}
-.btn:hover{
-    background-color: rgb(51, 146, 255);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-
-/* HEADER */
-header{
-    position: sticky;
-    top: 0;
-    z-index: 3;
-    width: 100%;
-    height: 10vh;
-    background: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 5rem;
-}
-.logo{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.logo h2{
-    margin-left: 1rem;
-    font-size: 4rem;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    font-weight: 900;
-}
-.logo h2 span{
-    font-size: 130%;
-}
-header ul{
-    display: flex;
-    align-items: center;
-    font-size: 1.8rem;
-}
-header ul li:not(:last-child){
-    margin-right: 2rem;
-}
-header .btn{
-    padding: 0.5rem 1.5rem;
-}
-header ul a{
-    text-transform: uppercase;
-    transition: color 200ms ease-in-out;
-}
-header ul a:not(.btn):hover{
-    color: grey
-}
-header ul li:not(:last-child)::after{
-    height: 3px;
-    width: 0;
-    background-color: rgb(67, 155, 255);
-    content: '';
-    display: block;
-    margin: auto;
-    border-radius: 100vw;
-    transition: width 200ms ease-out 50ms;
-}
-header ul li:hover::after{
-    width: 4rem;
-    transition-delay: 300ms;
-}
-
-@media screen and (max-width: 800px){
-    header{
-        flex-direction: column;
-        height: fit-content;
-    }
-}
-
 /* LANDING AREA */
 .landingArea{
     display: flex;
@@ -203,15 +92,15 @@ header ul li:hover::after{
     overflow: hidden;
     background-position: center center;
 }
-#gridCard1 .image{
+.gridCard:nth-of-type(1) .image{
     background: url(../img/grid/1.jpeg) no-repeat;
     background-size: 100%;
 }
-#gridCard2 .image{
+.gridCard:nth-of-type(2) .image{
     background: url(../img/grid/2.jpeg) no-repeat;
     background-size: 100%;
 }
-#gridCard3 .image{
+.gridCard:nth-of-type(3) .image{
     background: url(../img/grid/3.jpeg) no-repeat;
     background-size: 100%;
 }

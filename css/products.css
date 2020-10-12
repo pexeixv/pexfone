@@ -1,0 +1,87 @@
+.productMain{
+    height: 88vh;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 50px 100px;
+    justify-content: space-between;
+}
+.productMain .productCard{
+    height: 300px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+    padding: 20px;
+    position: relative;
+}
+.productMain .productCard .image{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.productMain .productCard .text{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.productCard .text .modelNo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 500ms;
+}
+.productMain .productCard img{
+    height: 90%;
+    transition: all 400ms ease;
+    position: absolute;
+    bottom: 20px;
+}
+.productCard .text h3{
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+}
+.productCard .text h4{
+    font-size: 4rem;
+    line-height: 4rem;
+}
+.productCard .text .btn{
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 180ms 0ms;
+}
+
+.productCard:hover .btn{
+    opacity: 1;
+    left: 95%;
+    transform: translateX(-100%);
+    transition: all 500ms 100ms;
+}
+.productCard:hover img{
+    height: 130%;
+}
+.productCard:hover .modelNo{
+    left: 10%;
+    transform: translateX(0);
+}
