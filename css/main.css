@@ -100,7 +100,7 @@ header ul li:not(:last-child)::after{
 }
 header ul li:hover::after{
     width: 4rem;
-    transition-delay: 300ms;
+    transition-delay: 150ms;
 }
 
 @media screen and (max-width: 800px){

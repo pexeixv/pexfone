@@ -18,8 +18,9 @@
     border-radius: 15px;
     cursor: pointer;
     transition: all 400ms ease-in-out;
-    padding: 20px;
+    padding: 10px 20px 0;
     position: relative;
+    margin
 }
 .productMain .productCard .image{
     height: 75%;
@@ -28,6 +29,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-bottom: 10px;
 }
 .productMain .productCard .text{
     height: 25%;
@@ -43,9 +45,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    height: 100%;
+    width: 100%;
     transition: all 500ms;
 }
 .productMain .productCard img{
@@ -54,34 +56,54 @@
     position: absolute;
     bottom: 20px;
 }
-.productCard .text h3{
+.productCard .modelNo h3{
     font-size: 1.8rem;
     line-height: 1.8rem;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 300ms ease-in-out 50ms;
 }
-.productCard .text h4{
-    font-size: 4rem;
-    line-height: 4rem;
+.productCard:hover .modelNo h3{
+    top: 10%;
+    left: 0;
+    transform: translate(0, -50%);
 }
+
+.productCard .modelNo h4{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    line-height: 3rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 300ms ease-in-out 50ms;
+}
+.productCard:hover .modelNo h4{
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+
 .productCard .text .btn{
     padding: .5rem 1rem;
     font-size: 1.2rem;
     opacity: 0;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 60%;
+    transform: translateX(0, 60%);
     transition: all 180ms 0ms;
+    top: -15%;
 }
 
 .productCard:hover .btn{
     opacity: 1;
-    left: 95%;
-    transform: translateX(-100%);
-    transition: all 500ms 100ms;
+    right: 0;
+    transform: translateX(0%);
+    transition: all 500ms 100ms ease-out;
 }
 .productCard:hover img{
-    height: 150%;
-}
-.productCard:hover .modelNo{
-    left: 10%;
-    transform: translateX(0);
+    height: 130%;
 }
