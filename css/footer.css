@@ -1,0 +1,32 @@
+footer{
+    background: rgb(219, 219, 219);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 4rem;
+    margin-top: 5rem;
+    border-top: .5rem solid grey;
+}
+footer i{
+    font-size: 2rem;
+    transition: all 300ms linear;
+}
+footer a:not(:last-child){
+    margin-right: 1rem;
+}
+footer h6{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+footer .copyRight{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .copyRight img{
+    height: 3rem;
+    margin-left: 1rem;
+}
+footer i:hover{
+    color: gray;
+}
