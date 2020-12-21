@@ -36,9 +36,8 @@
         <div class="form">
             <form action="POST">
                 <h1>Get in touch with us</h1>
-                <div>
-                <input type="text" name="name" id="name" placeholder="Name">
-                <input type="email" name="email" id="email" placeholder="E-mail"></div>
+                <input type="text" name="name" id="name" placeholder="Name" onkeydown="nameValidation()">
+                <input type="email" name="email" id="email" placeholder="E-mail" onkeydown="emailValidation()">
                 <input type="text" name="message" id="message" placeholder="Message">
                 <button type="submit" class="btn">Send</button>
             </form>
@@ -63,4 +62,10 @@
         </a>
     </footer>
 
+
+
+    <script src="js/enquiry.js"></script>
+
 </body>
+
+</html>
