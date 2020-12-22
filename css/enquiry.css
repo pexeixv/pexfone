@@ -12,6 +12,9 @@ section.contact{
     justify-content: center;
     height: 88vh;
 }
+.phone img{
+    width: 80%;
+}
 form{
     display: flex;
     flex-direction: column;

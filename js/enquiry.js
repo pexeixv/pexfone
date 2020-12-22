@@ -19,3 +19,14 @@ function nameValidation(){
         nameField.style.color = 'red';
     }
 }
+
+function copy(text) {
+    var textarea = document.createElement("textarea");
+    textarea.value = text;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+    alert("E-mail address has been copied to clipboard.");
+    return false;
+}
