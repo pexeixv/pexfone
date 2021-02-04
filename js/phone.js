@@ -37,3 +37,10 @@ images.forEach( image => {
     });
 
 
+window.addEventListener("scroll", (e) => {
+    let header = document.querySelector('header');
+    let scroll = this.scrollY;
+    if(scroll>=50)
+        header.style.boxShadow = '0 2px 10px 2px rgba(0,0,0,0.2)';
+    else header.style.boxShadow = 'none';
+});
