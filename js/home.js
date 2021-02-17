@@ -17,3 +17,24 @@ window.addEventListener('scroll',()=>{
         header.style.boxShadow = '0 2px 10px 2px rgba(0,0,0,0.2)';
     else header.style.boxShadow = 'none';
 })
+
+
+var icons = document.querySelectorAll('.socialIcons i');
+
+
+icons.forEach(currentIcon=>{
+    currentIcon.addEventListener('mouseenter',e=>{
+        icons.forEach(icon=>{
+            if(currentIcon.id!==icon.id){
+                icon.style.color='gray';
+            }
+        })
+    })
+})
+icons.forEach(currentIcon=>{
+    currentIcon.addEventListener('mouseleave',e=>{
+        icons.forEach(icon=>{
+            icon.style.color='black';
+        })
+    })
+})
