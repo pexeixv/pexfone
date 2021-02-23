@@ -1,3 +1,6 @@
+@import 'main.css';
+@import 'footer.css';
+
 header{
     background: white;
 }
