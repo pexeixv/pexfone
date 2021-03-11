@@ -63,6 +63,8 @@ ul, li{
 
 /* GLOBAL */
 .btn{
+    border: none;
+    padding: 0.2em;
     text-transform: uppercase;
     border-radius: 2rem;
     background-color: rgb(94, 169, 255);
@@ -73,6 +75,9 @@ ul, li{
 .btn:hover{
     background-color: rgb(51, 146, 255);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.btn:focus{
+    outline: none;
 }
 
 

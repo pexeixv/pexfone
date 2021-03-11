@@ -1,0 +1,86 @@
+@import 'main.css';
+
+.states{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 4em 0;
+}
+.states_title{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+.states_form{
+    display: flex;
+    gap: 2em;
+}
+.states_input{
+    height: 40px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    padding: 1.2rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: all 400ms linear;
+    width: 400px;
+}
+.states_input:focus{
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+}
+.states_btn{
+    font-size: 1.7rem;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+hr.break{
+    background: gray;
+    height: 2px;
+    width: 100%;
+}
+
+.stores{
+    padding-bottom: 10rem;
+}
+.stores_container{ 
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
+.store{
+    display: flex;
+    padding: 2em 4em;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 3em;
+    align-items: center;
+    justify-content: space-between;
+}
+.store_name{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.store_address{
+    font-size: 1.8rem;
+}
+.store_state{
+    font-size: 1.5rem;
+}
+.store_phone{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.store_btn{
+    padding: 1em 2em;
+    font-size: 1.2rem;
+}
+.store_sorry{
+    font-size: 2rem;
+    text-align: center;
+}
