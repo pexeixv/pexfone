@@ -47,7 +47,7 @@ hr.break{
 .stores{
     padding-bottom: 10rem;
 }
-.stores_container{ 
+.stores_container{
     width: 90%;
     max-width: 600px;
     margin: 0 auto;
@@ -84,4 +84,15 @@ hr.break{
 .store_sorry{
     font-size: 2rem;
     text-align: center;
+}
+
+
+@media screen and (max-width: 650px){
+    .states_form{
+        flex-direction: column;
+        align-items: center;
+    }
+    .states_btn{
+        width: fit-content;
+    }
 }
