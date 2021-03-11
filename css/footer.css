@@ -35,5 +35,6 @@ footer i:hover{
 @media screen and (max-width: 600px){
     footer{
         flex-direction: column;
+        gap: 0.5em;
     }
 }
