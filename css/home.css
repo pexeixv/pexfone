@@ -44,14 +44,19 @@
     }
     
 }
+.phone{
+    position: relative;
+}
 .phone .circle{
+    transform: translate(-50%, -50%);
     height: 350px;
     width: 350px;
     background: rgb(94, 169, 255);
     border-radius: 100vw;
     position: absolute;
     z-index: 1;
-    bottom: 50px;
+    top: 50%;
+    left: 50%;
     animation: circleGrow 4s linear infinite;
 }
 @keyframes circleGrow{
@@ -61,8 +66,8 @@
         background: #f1fbff;;
     }
     50%{
-        height: 360px;
-        width: 360px;
+        height: 370px;
+        width: 370px;
         background:rgb(199, 242, 255);
     }
 }
