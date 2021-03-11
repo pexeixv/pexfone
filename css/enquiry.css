@@ -23,6 +23,8 @@ section.contact{
 }
 form{
     display: flex;
+    width: 100%;
+    align-items: center;
     flex-direction: column;
 }
 input{
@@ -92,7 +94,6 @@ hr{
     }
     form{
         width: 100%;
-
     }
     .phone{
         height: fit-content;
