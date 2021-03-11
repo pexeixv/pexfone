@@ -179,8 +179,13 @@
             background:rgb(199, 242, 255);
         }
     }
-
-
+    .landingArea .phone{
+        flex: 3;
+    }
+    .landingArea .text{
+        padding-left: 0rem;
+        flex: 2;
+    }
 
 }
 
