@@ -3,13 +3,15 @@
 @import 'footer.css';
 
 .productMain{
-    height: 88vh;
+    margin: 0 auto;
+    min-height: calc( 100vh - 80px );
     align-items: center;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     width: 100%;
     padding: 50px 100px;
     justify-content: space-between;
+    grid-gap: 4em;
 }
 .productMain .productCard{
     height: 300px;
@@ -109,4 +111,28 @@
 }
 .productCard:hover img{
     height: 130%;
+}
+
+
+@media screen and (max-width: 1200px){
+    .productMain{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 950px){
+    .productMain{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 680px){
+    .productMain{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        padding: 100px 0;
+    }
+    .productMain .productCard{
+        margin: 0 auto;
+        flex-direction: row;
+        width: 80%;
+    }
 }
