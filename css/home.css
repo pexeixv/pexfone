@@ -1,10 +1,11 @@
 @import 'main.css';
+@import 'header.css';
 @import 'footer.css';
 
 /* LANDING AREA */
 .landingArea{
     display: flex;
-    height: 93vh;
+    min-height: calc( 100vh - 80px );
     background-color: rgb(199, 242, 255);
     z-index: 0;
 }
@@ -96,22 +97,20 @@
     background-position: center center;
 }
 .gridCard:nth-of-type(1) .image{
-    background: url(../img/grid/1.jpeg) no-repeat;
-    background-size: 100%;
+    background: url(../img/grid/1.jpeg) no-repeat center center/cover;
 }
 .gridCard:nth-of-type(2) .image{
-    background: url(../img/grid/2.jpeg) no-repeat;
-    background-size: 100%;
+    background: url(../img/grid/2.jpeg) no-repeat center center/cover;
 }
 .gridCard:nth-of-type(3) .image{
-    background: url(../img/grid/3.jpeg) no-repeat;
-    background-size: 100%;
+    background: url(../img/grid/3.jpeg) no-repeat center center/cover;
 }
 .gridCard .image, .gridCard .text{
     height: 100%;
     width: 50%;
 }
 .gridShow .gridCard .text{
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,4 +132,83 @@
 }
 .gridShow .text h3, .text h5, .text p{
     margin: 0 6rem;
+}
+
+
+
+
+
+@media screen and (max-width: 800px){
+    .landingArea{
+        padding: 5em;
+        display: flex;
+        flex-direction: column;
+    }
+    .landingArea .text{
+        order: 2;
+        z-index: 2;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .landingArea .text h1,.landingArea .text .btn{
+        margin: 0 auto;
+    }
+    .landingArea .text h1{
+        font-size: 4rem;
+    }
+    .landingArea .phone img{
+        height: 310px;
+    }
+    .phone .circle{
+        bottom: 220px;
+    }
+    @keyframes circleGrow{
+        0%, 100%{
+            height: 300px;
+            width: 300px;
+            background: #f1fbff;;
+        }
+        50%{
+            height: 310px;
+            width: 310px;
+            background:rgb(199, 242, 255);
+        }
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 1000px){
+    .gridShow .gridCard{
+        flex-direction: column;
+        height: 700px;
+    }
+    .gridCard:nth-of-type(2) .image{
+        order: 1;
+    }
+    .gridCard:nth-of-type(2) .text{
+        order: 2;
+    }
+    .gridCard .image{
+        width: 100%;
+        height: 800px;
+    }
+    .gridCard .image, .gridCard .text{
+        height: 100%;
+        width: 100%;
+    }
+.gridCard .image{
+        flex: 7;
+    }
+.gridCard .text{
+        flex: 3;
+    }
+
+
+    .gridCard .text h3, .gridCard .text p{
+        margin: 0;
+        padding: 0;
+    }
 }
