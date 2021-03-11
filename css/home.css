@@ -183,7 +183,7 @@
         flex: 3;
     }
     .landingArea .text{
-        align-items: flex-start;
+        justify-content: flex-start;
         padding-left: 0rem;
         flex: 2;
     }
