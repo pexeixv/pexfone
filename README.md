@@ -12,4 +12,4 @@
 ## Important links
 * [GitHub Repo](https://github.com/pexeixv/pexfone)
 * [Live Website](https://wd.gavinpereira.in/)
----
+--- 
