@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/stores.css">
 </head>
 
-<body onload="load()">
+<body>
     <header>
         <div class="bars">
             <div class="bar"></div>
@@ -41,6 +41,20 @@
 
     <section class="stores">
         <div class="stores_container">
+            <template class="store_template">
+                <div class="store">
+                    <div class="store_text">
+                        <h3 class="store_name"></h3>
+                        <p class="store_address"></p>
+                        <p class="store_state"></p>
+                        <a class="store_phone" href="#"></a>
+                    </div>
+                    <a class="store_btn btn" target="_blank" href="#">LOCATE</a>
+                </div>
+            </template>
+            <template class="store_sorrytemplate">
+                <p class="store_sorry">We're sorry. There are no shops nearby.</p>
+            </template>
         </div>
     </section>
 

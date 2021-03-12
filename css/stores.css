@@ -16,6 +16,8 @@
     text-transform: uppercase;
 }
 .states_form{
+    width: 100%;
+    justify-content: center;
     display: flex;
     gap: 2em;
 }
@@ -27,7 +29,8 @@
     border-radius: 2rem;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     transition: all 400ms linear;
-    width: 400px;
+    max-width: 400px;
+    width: 90%;
 }
 .states_input:focus{
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
