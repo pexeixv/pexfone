@@ -63,6 +63,7 @@ header ul li:hover::after{
     transition-delay: 150ms;
 }
 header .bars{
+    z-index: 4;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
