@@ -46,36 +46,6 @@ function titleCase(string) {
     return sentence.join(' ');
 }
 
-// function searchButtonClicked() {
-//     var container = document.querySelector('.stores_container');
-//     var submit = document.querySelector('.states_btn');
-//     var input = document.querySelector('.states_input');
-//     var state = input.value;
-//     var storesInState = [];
-//     input.value = titleCase(input.value);
-//     var innerHTML = '';
-//     stores.forEach(store => {
-//         if (store.state.toLowerCase() == state.toLowerCase()) {
-//             innerHTML += `
-//                 <div class="store">
-//                     <div class="store_text">
-//                         <h3 class="store_name">${store.name}</h3>
-//                         <p class="store_address">${store.address}</p>
-//                         <p class="store_state">${store.state} - ${store.pin}</p>
-//                         <a class="store_phone" href="tel:${store.phone}">${store.phone}</a>
-//                     </div>
-//                     <a class="store_btn btn" target="_blank" href="${store.map}">Locate</a>
-//                 </div>
-//             `
-//         }
-//     })
-//     if (innerHTML == '') {
-//         innerHTML = `<p class="store_sorry">We're sorry. There are no shops nearby.</p>`
-//     }
-//     container.innerHTML = innerHTML;
-// }
-
-
 function searchButtonClicked() {
     var container = document.querySelector('.stores_container');
     var submit = document.querySelector('.states_btn');
