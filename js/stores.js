@@ -79,3 +79,15 @@ function searchButtonClicked() {
 }
 
 
+function getHeight(query) {
+    element = document.querySelector(query);
+    heightStr = window.getComputedStyle(element).getPropertyValue('height');
+    height = parseInt(heightStr.replace('px', ''));
+    return height
+}
+
+var totalHeight = 0;
+['header', '.states', 'footer'].forEach(element => {
+    totalHeight += getHeight(element);
+})
+document.querySelector('.stores').style.minHeight = `calc( 100vh - ${totalHeight}px )`

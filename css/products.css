@@ -11,9 +11,10 @@
     width: 100%;
     padding: 50px 100px;
     justify-content: space-between;
-    grid-gap: 4em;
+    grid-gap: 5em 1em;
 }
 .productMain .productCard{
+    margin: 1em;
     height: 300px;
     width: 250px;
     display: flex;
@@ -24,7 +25,7 @@
     border-radius: 15px;
     cursor: pointer;
     transition: all 400ms ease-in-out;
-    padding: 10px 20px 0;
+    padding: 10px 20px;
     position: relative;
 }
 .productMain .productCard .image{
@@ -70,6 +71,9 @@
     transform: translate(-50%, -50%);
     transition: all 300ms ease-in-out 50ms;
 }
+.productCard:hover{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.35);
+}
 .productCard:hover .modelNo h3{
     top: 10%;
     left: 0;
@@ -110,8 +114,12 @@
     transition: all 500ms 100ms ease-out;
 }
 .productCard:hover img{
-    height: 130%;
+    height: 105%;
 }
+.productCard img:hover{
+    filter: drop-shadow(0 0 20px rgba(119, 128, 255, 0.515));
+}
+
 
 
 @media screen and (max-width: 1200px){
@@ -134,5 +142,44 @@
         margin: 0 auto;
         flex-direction: row;
         width: 80%;
+    }
+    .productMain .productCard .text{
+        width: 50%;
+    }
+    .productMain .productCard .image{
+        width: 30%;
+    }
+
+    .productMain .productCard .text .btn{
+        position: unset;
+        opacity: 1;
+    }
+    .productMain .productCard .text{
+        gap: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+    .productMain .productCard .text h3,
+    .productMain .productCard .text h4{
+        text-align: left;
+        position: unset;
+        left: unset;
+        right: unset;
+        top: unset;
+        bottom: unset;
+        transform: none;
+    }
+    .productMain .productCard .modelNo{
+        position: unset;
+        gap: 0.7em;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .productMain .productCard{
+        flex-direction: column;
+        height: 500px;
+        padding: 10px 20px 30px;
     }
 }

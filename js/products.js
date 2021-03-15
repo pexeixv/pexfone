@@ -27,6 +27,48 @@ let phones = [
         "image": "img/phone/pap/papFront.png",
         "href": "products/pineapple+.html"
     },
+    {
+        "id": 0004,
+        "brand": "PexFone",
+        "model": "PineApple+",
+        "image": "img/phone/pap/papFront.png",
+        "href": "products/pineapple+.html"
+    },
+    {
+        "id": 0004,
+        "brand": "PexFone",
+        "model": "PineApple+",
+        "image": "img/phone/pap/papFront.png",
+        "href": "products/pineapple+.html"
+    },
+    {
+        "id": 0004,
+        "brand": "PexFone",
+        "model": "PineApple+",
+        "image": "img/phone/pap/papFront.png",
+        "href": "products/pineapple+.html"
+    },
+    {
+        "id": 0004,
+        "brand": "PexFone",
+        "model": "PineApple+",
+        "image": "img/phone/pap/papFront.png",
+        "href": "products/pineapple+.html"
+    },
+    {
+        "id": 0004,
+        "brand": "PexFone",
+        "model": "PineApple+",
+        "image": "img/phone/pap/papFront.png",
+        "href": "products/pineapple+.html"
+    },
+    {
+        "id": 0004,
+        "brand": "PexFone",
+        "model": "PineApple+",
+        "image": "img/phone/pap/papFront.png",
+        "href": "products/pineapple+.html"
+    }
 ]
 
 productTemplate = document.querySelector('.product_template');
@@ -40,3 +82,12 @@ phones.forEach(phone => {
     productContent.querySelector('img').src = phone.image;
     container.append(productContent);
 })
+
+document.querySelectorAll('.productCard').forEach(card => {
+    card.addEventListener('click', () => {
+        href = card.querySelector('.btn').href;
+        location.href = href;
+    })
+})
+
+
