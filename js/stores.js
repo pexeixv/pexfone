@@ -22,7 +22,7 @@ var stores = [
         "name": "Pexfone Shopee",
         "address": "Apna Bazar, Vasco",
         "state": "Goa",
-        "pin": 403601,
+        "pin": 403802,
         "phone": "918888253994",
         "map": "https://goo.gl/maps/TEE53k8kTH1aRwh5A"
     },
@@ -65,7 +65,7 @@ function searchButtonClicked() {
             content.querySelector('.store_name').innerText = store.name;
             content.querySelector('.store_address').innerText = store.address;
             content.querySelector('.store_state').innerText = `${store.state} - ${store.pin}`;
-            content.querySelector('.store_phone').innerText = store.phone;
+            content.querySelector('.store_phone').innerText = `+91 ${store.phone.slice(2, 12)}`;
             content.querySelector('.store_phone').href = `tel:${store.phone}`;
             content.querySelector('.store_btn').href = store.map;
             container.append(content)
