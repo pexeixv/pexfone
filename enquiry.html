@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,26 +8,12 @@
     <link rel="shortcut icon" href="img/logo/fav.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/enquiry.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
 
 <body>
-    <header>
-        <div class="bars">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <a class="logo" href="index.html">
-            <h2>Pe<span>x</span>Fone</h2>
-        </a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="enquiry.html">Enquiry</a></li>
-            <li><a href="stores.html" class="btn">Find a store</a></li>
-        </ul>
-    </header>
+    <header></header>
     <section class="contact">
         <div class="phone">
             <!-- <img src="img/phone/ca/caFront.png" alt=""> -->
@@ -48,25 +34,16 @@
         </div>
     </section>
 
-    <footer>
-        <div class="socialIcons">
-            <a href="http://instagram.com/pexeixv" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="http://github.com/pexeixv" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="mailto:connect@gavinpereira.in" target="_blank"><i class="fas fa-envelope"></i></a>
-            <a href="http://facebook.com/pexeixv" target="_blank"><i class="fab fa-facebook-f"></i></a>
-
-        </div><a href="http://gavinpereira.in" target="_blank">
-            <div class="copyRight">
-                <h6>&copy;Gavin Pereira</h6>
-                <img src="img/icon/gpLogo.svg" alt="">
-            </div>
-        </a>
-    </footer>
+    <footer></footer>
 
 
 
     <script src="js/main.js"></script>
     <script src="js/enquiry.js"></script>
+    <script>
+        $("header").load("components/header.html");
+        $("footer").load("components/footer.html");
+    </script>
 
 </body>
 

@@ -2,30 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products • PexFone</title>
     <link rel="shortcut icon" href="img/logo/fav.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/products.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <div class="bars">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <a class="logo" href="index.html">
-            <h2>Pe<span>x</span>Fone</h2>
-        </a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="enquiry.html">Enquiry</a></li>
-            <li><a href="stores.html" class="btn">Find a store</a></li>
-        </ul>
-    </header>
+    <header></header>
 
     <noscript>Please enable JavaScript.</noscript>
 
@@ -48,22 +34,13 @@
 
 
 
-    <footer>
-        <div class="socialIcons">
-            <a href="http://instagram.com/pexeixv" target="_blank"><i class="fab fa-instagram" id=instagram></i></a>
-            <a href="http://github.com/pexeixv" target="_blank"><i class="fab fa-github" id=github></i></a>
-            <a href="mailto:connect@gavinpereira.in" target="_blank"><i class="fas fa-envelope" id=email></i></a>
-            <a href="http://facebook.com/pexeixv" target="_blank"><i class="fab fa-facebook-f" id=facebook></i></a>
-
-        </div><a href="http://gavinpereira.in" target="_blank">
-            <div class="copyRight">
-                <h6>&copy;Gavin Pereira</h6>
-                <img src="img/icon/gpLogo.svg" alt="">
-            </div>
-        </a>
-    </footer>
+    <footer></footer>
     <script src="js/main.js"></script>
     <script src="js/products.js"></script>
+    <script>
+        $("header").load("components/header.html");
+        $("footer").load("components/footer.html");
+    </script>
 
 </body>
 

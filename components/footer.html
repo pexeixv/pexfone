@@ -1,0 +1,32 @@
+<div class="socialIcons">
+    <a href="http://instagram.com/pexeixv" target="_blank"><i class="fab fa-instagram" id=instagram></i></a>
+    <a href="http://github.com/pexeixv" target="_blank"><i class="fab fa-github" id=github></i></a>
+    <a href="mailto:connect@gavinpereira.in" target="_blank"><i class="fas fa-envelope" id=email></i></a>
+    <a href="http://facebook.com/pexeixv" target="_blank"><i class="fab fa-facebook-f" id=facebook></i></a>
+</div>
+<a href="http://gavinpereira.in" target="_blank">
+    <div class="copyRight">
+        <h6>&copy;Gavin Pereira</h6>
+        <img src="img/icon/gpLogo.svg" alt="">
+    </div>
+</a>
+
+<script>var icons = document.querySelectorAll('.socialIcons i');
+
+
+    icons.forEach(currentIcon => {
+        currentIcon.addEventListener('mouseenter', e => {
+            icons.forEach(icon => {
+                if (currentIcon.id !== icon.id) {
+                    icon.style.color = 'gray';
+                }
+            })
+        })
+    })
+    icons.forEach(currentIcon => {
+        currentIcon.addEventListener('mouseleave', e => {
+            icons.forEach(icon => {
+                icon.style.color = 'black';
+            })
+        })
+    })</script>
