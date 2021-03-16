@@ -1,0 +1,225 @@
+@import 'main.css';
+@import 'header.css';
+@import 'footer.css';
+
+/* LANDING AREA */
+.landingArea{
+    display: flex;
+    min-height: calc( 100vh - 80px );
+    background-color: rgb(199, 242, 255);
+    z-index: 0;
+}
+.landingArea .text, .landingArea .phone{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landingArea .text{
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.7rem;
+    padding-left: 5rem;
+}
+.landingArea .btn{
+    padding: 1rem 2.5rem;
+}
+.landingArea .text h1{
+    font-size: 6rem;
+}
+.landingArea .text p{
+    margin: 0 0 3rem;
+}
+.phone img{
+    z-index: 2;
+    animation: phoneBob 4s linear infinite;
+}
+
+@keyframes phoneBob{
+    0%, 100%{
+        transform: translateY(-30px);
+    }
+    50%{
+        transform: translateY(-45px);
+    }
+    
+}
+.phone{
+    position: relative;
+}
+.phone .circle{
+    transform: translate(-50%, -50%);
+    height: 350px;
+    width: 350px;
+    background: rgb(94, 169, 255);
+    border-radius: 100vw;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    animation: circleGrow 4s linear infinite;
+}
+@keyframes circleGrow{
+    0%, 100%{
+        height: 350px;
+        width: 350px;
+        background: #f1fbff;;
+    }
+    50%{
+        height: 370px;
+        width: 370px;
+        background:rgb(199, 242, 255);
+    }
+}
+
+
+
+
+/* GRID SHOW */
+
+.gridShow{
+    width: calc(100%-0);
+    height: fit-content;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.gridShow h2{
+    font-size: 5rem;
+    margin: 2rem auto 5rem;
+}
+.gridShow .gridCard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 400px;
+}
+.gridShow .gridCard .image{
+    overflow: hidden;
+    background-position: center center;
+}
+.gridCard:nth-of-type(1) .image{
+    background: url(../img/grid/1.jpeg) no-repeat center center/cover;
+}
+.gridCard:nth-of-type(2) .image{
+    background: url(../img/grid/2.jpeg) no-repeat center center/cover;
+}
+.gridCard:nth-of-type(3) .image{
+    background: url(../img/grid/3.jpeg) no-repeat center center/cover;
+}
+.gridCard .image, .gridCard .text{
+    height: 100%;
+    width: 50%;
+}
+.gridShow .gridCard .text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.gridShow .gridCard .text h3{
+    margin-top: 2rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.gridShow .gridCard .text h5{
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+.gridShow .gridCard .text p{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+.gridShow .text h3, .text h5, .text p{
+    margin: 0 6rem;
+}
+
+
+
+
+
+@media screen and (max-width: 800px){
+    .landingArea{
+        padding: 5em;
+        display: flex;
+        flex-direction: column;
+    }
+    .landingArea .text{
+        order: 2;
+        z-index: 2;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .landingArea .text h1,.landingArea .text .btn{
+        margin: 0 auto;
+    }
+    .landingArea .text h1{
+        font-size: 4rem;
+    }
+    .landingArea .phone img{
+        height: 310px;
+    }
+    .phone .circle{
+        bottom: 220px;
+    }
+    @keyframes circleGrow{
+        0%, 100%{
+            height: 300px;
+            width: 300px;
+            background: #f1fbff;;
+        }
+        50%{
+            height: 310px;
+            width: 310px;
+            background:rgb(199, 242, 255);
+        }
+    }
+    .landingArea .phone{
+        flex: 3;
+    }
+    .landingArea .text{
+        justify-content: flex-start;
+        padding-left: 0rem;
+        flex: 2;
+    }
+
+}
+
+
+@media screen and (max-width: 1000px){
+    .gridShow .gridCard{
+        flex-direction: column;
+        height: 700px;
+    }
+    .gridCard:nth-of-type(2) .image{
+        order: 1;
+    }
+    .gridCard:nth-of-type(2) .text{
+        order: 2;
+    }
+    .gridCard .image{
+        width: 100%;
+        height: 800px;
+    }
+    .gridCard .image, .gridCard .text{
+        height: 100%;
+        width: 100%;
+    }
+.gridCard .image{
+        flex: 7;
+    }
+.gridCard .text{
+        flex: 3;
+    }
+
+
+    .gridCard .text h3, .gridCard .text p{
+        margin: 0;
+        padding: 0;
+    }
+}

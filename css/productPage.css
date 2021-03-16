@@ -1,0 +1,165 @@
+@import 'main.css';
+@import 'header.css';
+@import 'footer.css';
+
+header{
+    background: white;
+}
+section.content{
+    display: flex;
+    flex-flow: row wrap;
+    height: 90vh;
+    width: 100%;
+}
+.phone, .matterWrap{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.matter{
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    justify-content: space-between;
+}
+.phone{
+    align-items: center;
+    justify-content: space-evenly;
+}
+.phone .altPhone{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.phone .altPhone img{
+    height: 100%;
+}
+.matterWrap{
+    align-items: flex-start;
+}
+.matterWrap .price{
+    font-size: 2rem;
+}
+.matterWrap .price::before{
+    content: '₹';
+    font-size: 1.7rem;
+}
+.matterWrap .price::after{
+    content: '.00';
+    font-size: 1.5rem;
+}
+.matterWrap .model{
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+}
+.matterWrap .buyBtn img{
+    width: 100%;
+}
+.matterWrap .rating{
+    height: 20px;
+    display: flex;
+    width: fit-content;
+    justify-content: space-between;
+}
+.matterWrap .rating h6{
+    font-size: 1.3rem;
+    padding: 2px 5px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    font-weight: normal;
+    margin: 0 3px;
+}
+.matterWrap .rating img{
+    height: 100%;
+}
+.matterWrap .buyFrom{
+    display: flex;
+    height: 100px;
+    width: 400px;
+    margin: 2rem 0;
+}
+.matterWrap .buyFrom .buyBtn{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20rem;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    transition: all 400ms;
+}
+.matterWrap .buyFrom .buyBtn:hover{
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+}
+.eCom img{
+    height: 30px;
+}
+.eCom h3{
+    font-size: 1.7rem;
+    text-align: center;
+}
+.matterWrap ul li{
+    list-style: disc;
+    font-size: 1.5rem;
+}
+.matterWrap ul{
+    margin: 0rem 3rem 0;
+}
+.rating .star:nth-of-type(5){
+    filter: invert(50%);
+}
+
+section.specs{
+    margin: auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+.specs h3{
+    font-size: 3rem;
+    text-align: center;
+}
+.specs h4{
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.table{
+    margin: 2rem;
+    width: 100%;
+    font-size: 1.4rem;
+}
+table{
+    width: 100%;
+}
+.table th{
+    width: 20%;
+    text-align: left;
+    color: rgb(97, 97, 97);
+}
+.table td{
+    /* width: 60%; */
+}
+.banner{
+    width: 100%;
+    height: fit-content;
+}
+.banner img{
+    width: 100%;
+    height: auto;
+}
+
+.altPhone img{
+    cursor: pointer;
+}

@@ -1,0 +1,185 @@
+@import 'main.css';
+@import 'header.css';
+@import 'footer.css';
+
+.productMain{
+    margin: 0 auto;
+    min-height: calc( 100vh - 80px );
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    padding: 50px 100px;
+    justify-content: space-between;
+    grid-gap: 5em 1em;
+}
+.productMain .productCard{
+    margin: 1em;
+    height: 300px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+    padding: 10px 20px;
+    position: relative;
+}
+.productMain .productCard .image{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+.productMain .productCard .text{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.productCard .text .modelNo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transition: all 500ms;
+}
+.productMain .productCard img{
+    height: 90%;
+    transition: all 400ms ease;
+    position: absolute;
+    bottom: 20px;
+}
+.productCard .modelNo h3{
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 300ms ease-in-out 50ms;
+}
+.productCard:hover{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.35);
+}
+.productCard:hover .modelNo h3{
+    top: 10%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+.productCard .modelNo h4{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    line-height: 3rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 300ms ease-in-out 50ms;
+}
+.productCard:hover .modelNo h4{
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+
+.productCard .text .btn{
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+    opacity: 0;
+    position: absolute;
+    right: 60%;
+    transform: translateX(0, 60%);
+    transition: all 180ms 0ms;
+    top: -15%;
+}
+
+.productCard:hover .btn{
+    opacity: 1;
+    right: 0;
+    transform: translateX(0%);
+    transition: all 500ms 100ms ease-out;
+}
+.productCard:hover img{
+    height: 105%;
+}
+.productCard img:hover{
+    filter: drop-shadow(0 0 20px rgba(119, 128, 255, 0.515));
+}
+
+
+
+@media screen and (max-width: 1200px){
+    .productMain{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 950px){
+    .productMain{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 680px){
+    .productMain{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        padding: 100px 0;
+    }
+    .productMain .productCard{
+        margin: 0 auto;
+        flex-direction: row;
+        width: 80%;
+    }
+    .productMain .productCard .text{
+        width: 50%;
+    }
+    .productMain .productCard .image{
+        width: 30%;
+    }
+
+    .productMain .productCard .text .btn{
+        position: unset;
+        opacity: 1;
+    }
+    .productMain .productCard .text{
+        gap: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+    .productMain .productCard .text h3,
+    .productMain .productCard .text h4{
+        text-align: left;
+        position: unset;
+        left: unset;
+        right: unset;
+        top: unset;
+        bottom: unset;
+        transform: none;
+    }
+    .productMain .productCard .modelNo{
+        position: unset;
+        gap: 0.7em;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .productMain .productCard{
+        flex-direction: column;
+        height: 500px;
+        padding: 10px 20px 30px;
+    }
+}

@@ -1,0 +1,113 @@
+
+
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: bold;
+    font-weight: 700;
+    src: local('Poppins Bold'), url('../font/Poppins-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Poppins Regular'), url('../font/Poppins-Regular.woff') format('woff');
+    }
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: bolder;
+    font-weight: 900;
+    src: local('Poppins Black'), url('../font/Poppins-Black.woff') format('woff');
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BASIC RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    /* outline: .5px solid red; */
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul, li{
+    list-style: none;
+}
+*::selection{
+    background: black;
+    color: blue;
+}
+
+
+
+
+/* GLOBAL */ 
+.btn{
+    border: none;
+    padding: 0.2em;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    background-color: rgb(94, 169, 255);
+    color: white;
+    font-weight: bold;
+    transition: 200ms ease-in-out;
+}
+.btn:hover{
+    background-color: rgb(51, 146, 255);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.btn:focus{
+    outline: none;
+}
+
+
+
+noscript{
+    font-size: 2rem;
+}
+
+
+/* CUSTOM SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 0px;
+    /* box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25); */
+    background: transparent
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 500px;
+    background: rgb(169, 169, 169);
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(192, 192, 192);
+}
