@@ -73,7 +73,7 @@ ul, li{
     background-color: rgb(94, 169, 255);
     color: white;
     font-weight: bold;
-    transition: background-color 200ms ease-in-out;
+    transition: 200ms ease-in-out;
 }
 .btn:hover{
     background-color: rgb(51, 146, 255);
