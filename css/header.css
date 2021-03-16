@@ -48,7 +48,7 @@ header .btn{
 }
 header ul a{
     text-transform: uppercase;
-    transition: color 200ms ease-in-out;
+    transition: 300ms ease-in-out;
 }
 header ul a:not(.btn):hover{
     color: grey
@@ -137,6 +137,7 @@ header .bar{
     header ul li{
         font-size: 2.2rem;
         margin: 0;
+        font-weight: bold;
     }
     header ul li:not(:last-child){
         margin-right: 0;
