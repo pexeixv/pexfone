@@ -7,7 +7,7 @@
 * Imagery from [Unsplash](https://unsplash.com/) and [Samsung](https://www.samsung.com/in/smartphones/galaxy-a/).
 ---
 ## Preview
-![Pexfone](img/landing.gif "Pexfone landing page")
+![Pexfone](img/landing.png "Pexfone landing page")
 ---
 ## Important links
 * [GitHub Repo](https://github.com/pexeixv/pexfone)
