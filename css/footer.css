@@ -23,6 +23,14 @@ footer .copyRight{
     align-items: center;
     justify-content: space-between;
 }
+.copyRight h6{
+    transition: all 400ms ease-out;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+}
+.copyRight:hover > h6{
+    text-decoration-color: black;
+}
 footer .copyRight img{
     height: 3rem;
     margin-left: 1rem;
