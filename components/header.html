@@ -53,6 +53,9 @@
         nav.appendChild(linkTemplate)
     })
 
+    var li = nav.querySelectorAll('a')
+    li[3].classList.add('btn')
+
     if (window.location.pathname == '/' || window.location.pathname == '/index.html')
         document.querySelector('.logo').href = '#'
 
