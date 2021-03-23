@@ -3,7 +3,7 @@
     <div class="bar"></div>
     <div class="bar"></div>
 </div>
-<a class="logo" href="index.html">
+<a class="logo" href="/index.html">
     <h2>Pe<span>x</span>Fone</h2>
 </a>
 <ul class="nav">
@@ -18,19 +18,19 @@
     var links = [
         {
             name: 'Home',
-            link: 'index.html'
+            link: '/index.html'
         },
         {
             name: 'Products',
-            link: 'products.html'
+            link: '/products/index.html'
         },
         {
             name: 'Enquiry',
-            link: 'enquiry.html'
+            link: '/enquiry.html'
         },
         {
             name: 'Find a Store',
-            link: 'stores.html'
+            link: '/stores.html'
         },
 
     ]
@@ -46,10 +46,10 @@
         anchor.href = link.link;
         if (link.link == 'stores.html')
             anchor.classList.add('btn')
-        if (window.location.pathname == `/${link.link}`)
-            anchor.href = '#';
-        if (window.location.pathname == '/' && anchor.href.includes('index.html'))
-            anchor.href = '#';
+        // if (window.location.pathname == `/${link.link}`)
+        //     anchor.href = '#';
+        // if (window.location.pathname == '/' && anchor.href.includes('index.html'))
+        //     anchor.href = '#';
         nav.appendChild(linkTemplate)
     })
 

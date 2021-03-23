@@ -60,7 +60,6 @@ hr.break{
     gap: 5em;
 }
 .store{
-    overflow: hidden;
     display: flex;
     border-radius: 3em;
     align-items: center;

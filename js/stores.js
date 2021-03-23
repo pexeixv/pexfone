@@ -58,7 +58,7 @@ function searchButtonClicked() {
         container.querySelector('.store_sorry').remove();
     }
     input.value = titleCase(input.value);
-    stores.forEach(store => { 
+    stores.forEach(store => {
         if (store.state.toLowerCase() == state.toLowerCase()) {
             var template = document.querySelector('.store_template');
             var content = template.content.cloneNode(true);

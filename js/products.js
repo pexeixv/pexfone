@@ -3,66 +3,30 @@ let phones = [
         "id": 0001,
         "brand": "PexFone",
         "model": "CustardApple",
-        "image": "img/phone/ca/caFront.png",
-        "href": "products/custardapple.html"
+        "image": "../img/phone/ca/caFront.png",
+        "href": "custardapple.html"
     },
     {
         "id": 0002,
         "brand": "PexFone",
         "model": "CustardApple+",
-        "image": "img/phone/cap/capFront.png",
-        "href": "products/custardapple+.html"
+        "image": "../img/phone/cap/capFront.png",
+        "href": "custardapple+.html"
     },
     {
         "id": 0003,
         "brand": "PexFone",
         "model": "PineApple",
-        "image": "img/phone/pa/paFront.png",
-        "href": "products/pineapple.html"
+        "image": "../img/phone/pa/paFront.png",
+        "href": "pineapple.html"
     },
     {
         "id": 0004,
         "brand": "PexFone",
         "model": "PineApple+",
-        "image": "img/phone/pap/papFront.png",
-        "href": "products/pineapple+.html"
-    },
-    {
-        "id": 0004,
-        "brand": "PexFone",
-        "model": "PineApple+",
-        "image": "img/phone/pap/papFront.png",
-        "href": "products/pineapple+.html"
-    },
-    {
-        "id": 0004,
-        "brand": "PexFone",
-        "model": "PineApple+",
-        "image": "img/phone/pap/papFront.png",
-        "href": "products/pineapple+.html"
-    },
-    {
-        "id": 0004,
-        "brand": "PexFone",
-        "model": "PineApple+",
-        "image": "img/phone/pap/papFront.png",
-        "href": "products/pineapple+.html"
-    },
-    {
-        "id": 0004,
-        "brand": "PexFone",
-        "model": "PineApple+",
-        "image": "img/phone/pap/papFront.png",
-        "href": "products/pineapple+.html"
-    },
-    {
-        "id": 0004,
-        "brand": "PexFone",
-        "model": "PineApple+",
-        "image": "img/phone/pap/papFront.png",
-        "href": "products/pineapple+.html"
-    },
-
+        "image": "../img/phone/pap/papFront.png",
+        "href": "pineapple+.html"
+    }
 ]
 
 productTemplate = document.querySelector('.product_template');
