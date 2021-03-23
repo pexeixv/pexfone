@@ -14,7 +14,7 @@
         {
             name: 'Instagram',
             classes: ['fab', 'fa-instagram'],
-            link: '//instagram.com/pexeixv'
+            link: '//instagram.com/pexeixv',
         },
         {
             name: 'Github',
@@ -35,12 +35,13 @@
 
     var socialIcons = document.querySelector('.socialIcons');
 
-    console.log('work');
+
     footerLinks.forEach(footerLink => {
         var template = socialIcons.querySelector('template').content.cloneNode(true);
         var a = template.querySelector('a');
         var i = template.querySelector('i');
         a.href = footerLink.link;
+        i.setAttribute('id', footerLink.name.toLowerCase());
         footerLink.classes.forEach(clas => {
             i.classList.add(clas);
         })
@@ -60,8 +61,6 @@
                 }
             })
         })
-    })
-    icons.forEach(currentIcon => {
         currentIcon.addEventListener('mouseleave', e => {
             icons.forEach(icon => {
                 icon.style.color = 'black';
