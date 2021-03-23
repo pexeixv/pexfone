@@ -6,15 +6,59 @@
 <a class="logo" href="index.html">
     <h2>Pe<span>x</span>Fone</h2>
 </a>
-<ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="products.html">Products</a></li>
-    <li><a href="enquiry.html">Enquiry</a></li>
-    <li><a href="stores.html" class="btn">Find a store</a></li>
+<ul class="nav">
+    <template>
+        <li><a href="#"></a></li>
+    </template>
 </ul>
 
 
-<script>document.querySelector('.bars').addEventListener('click', () => {
+<script>
+
+    var links = [
+        {
+            name: 'Home',
+            link: 'index.html'
+        },
+        {
+            name: 'Products',
+            link: 'products.html'
+        },
+        {
+            name: 'Enquiry',
+            link: 'enquiry.html'
+        },
+        {
+            name: 'Find a Store',
+            link: 'stores.html'
+        },
+
+    ]
+    var nav = document.querySelector('.nav')
+
+
+    links.forEach(link => {
+        var linkTemplate = nav.querySelector('template').content.cloneNode(true);
+        var anchor = linkTemplate.querySelector('a');
+        anchor.innerText = link.name;
+        anchor.href = link.link;
+        if (link.link == 'stores.html')
+            anchor.classList.add('btn')
+        if (window.location.pathname == `/${link.link}`)
+            anchor.href = '#';
+        if (window.location.pathname == `/`)
+            anchor.href = '#';
+        nav.appendChild(linkTemplate)
+    })
+
+    if (window.location.pathname == '/' || window.location.pathname == '/index.html')
+        document.querySelector('.logo').href = '#'
+
+
+
+
+
+    document.querySelector('.bars').addEventListener('click', () => {
         document.querySelector('header ul').classList.toggle('show');
         document.querySelector('.bars').classList.toggle('cross');
     })

@@ -62,13 +62,7 @@ let phones = [
         "image": "img/phone/pap/papFront.png",
         "href": "products/pineapple+.html"
     },
-    {
-        "id": 0004,
-        "brand": "PexFone",
-        "model": "PineApple+",
-        "image": "img/phone/pap/papFront.png",
-        "href": "products/pineapple+.html"
-    }
+
 ]
 
 productTemplate = document.querySelector('.product_template');
