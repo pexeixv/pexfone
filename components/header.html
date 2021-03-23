@@ -46,7 +46,7 @@
             anchor.classList.add('btn')
         if (window.location.pathname == `/${link.link}`)
             anchor.href = '#';
-        if (window.location.pathname == `/`)
+        if (window.location.pathname == `/` && anchor.href == `index.html`)
             anchor.href = '#';
         nav.appendChild(linkTemplate)
     })
