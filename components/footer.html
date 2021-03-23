@@ -1,8 +1,5 @@
 <div class="socialIcons">
-    <a href="http://instagram.com/pexeixv" target="_blank"><i class="fab fa-instagram" id=instagram></i></a>
-    <a href="http://github.com/pexeixv" target="_blank"><i class="fab fa-github" id=github></i></a>
-    <a href="mailto:connect@gavinpereira.in" target="_blank"><i class="fas fa-envelope" id=email></i></a>
-    <a href="http://facebook.com/pexeixv" target="_blank"><i class="fab fa-facebook-f" id=facebook></i></a>
+    <template><a href="#" target="_blank"><i class=""></i></a></template>
 </div>
 <a href="http://gavinpereira.in" target="_blank">
     <div class="copyRight">
@@ -11,7 +8,48 @@
     </div>
 </a>
 
-<script>var icons = document.querySelectorAll('.socialIcons i');
+<script>
+
+    var footerLinks = [
+        {
+            name: 'Instagram',
+            classes: ['fab', 'fa-instagram'],
+            link: '//instagram.com/pexeixv'
+        },
+        {
+            name: 'Github',
+            classes: ['fab', 'fa-github'],
+            link: '//github.com/pexeixv'
+        },
+        {
+            name: 'Email',
+            classes: ['fas', 'fa-envelope'],
+            link: 'mailto:connect@gavinpereira.in'
+        },
+        {
+            name: 'Facebook',
+            classes: ['fab', 'fa-facebook'],
+            link: '//facebook.com/pexeixv'
+        },
+    ]
+
+    var socialIcons = document.querySelector('.socialIcons');
+
+    console.log('work');
+    footerLinks.forEach(footerLink => {
+        var template = socialIcons.querySelector('template').content.cloneNode(true);
+        var a = template.querySelector('a');
+        var i = template.querySelector('i');
+        a.href = footerLink.link;
+        footerLink.classes.forEach(clas => {
+            i.classList.add(clas);
+        })
+        socialIcons.appendChild(template)
+    })
+
+
+
+    var icons = document.querySelectorAll('.socialIcons i');
 
 
     icons.forEach(currentIcon => {
@@ -29,4 +67,6 @@
                 icon.style.color = 'black';
             })
         })
-    })</script>
+    })
+
+</script>
