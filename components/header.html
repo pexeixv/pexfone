@@ -37,6 +37,8 @@
     var nav = document.querySelector('.nav')
 
 
+
+
     links.forEach(link => {
         var linkTemplate = nav.querySelector('template').content.cloneNode(true);
         var anchor = linkTemplate.querySelector('a');
@@ -46,14 +48,14 @@
             anchor.classList.add('btn')
         if (window.location.pathname == `/${link.link}`)
             anchor.href = '#';
-        if (window.location.pathname == `/` && anchor.href == `index.html`)
+        console.log(anchor.href);
+        if (window.location.pathname == '/' && anchor.href.includes('index.html'))
             anchor.href = '#';
         nav.appendChild(linkTemplate)
     })
 
     if (window.location.pathname == '/' || window.location.pathname == '/index.html')
         document.querySelector('.logo').href = '#'
-
 
 
 
