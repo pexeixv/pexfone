@@ -1,6 +1,6 @@
 [
     {
-        "id": 0001,
+        "id": 1,
         "name": "Pexfone Gallery",
         "address": "Twin Towers, Panjim",
         "state": "Goa",
@@ -9,7 +9,7 @@
         "map": "https://goo.gl/maps/Ya7yQXk6TLrUpPgF8"
     },
     {
-        "id": 0002,
+        "id": 2,
         "name": "Pexfone Multicare Center",
         "address": "Eastern Complex, Margao",
         "state": "Goa",
@@ -18,7 +18,7 @@
         "map": "https://goo.gl/maps/domyopgHkwpUjEpz9"
     },
     {
-        "id": 0003,
+        "id": 3,
         "name": "Pexfone Shopee",
         "address": "Apna Bazar, Vasco",
         "state": "Goa",
@@ -27,7 +27,7 @@
         "map": "https://goo.gl/maps/TEE53k8kTH1aRwh5A"
     },
     {
-        "id": 0004,
+        "id": 4,
         "name": "Pexfone Care",
         "address": "Sapna Complex, Thane",
         "state": "Maharashtra",
